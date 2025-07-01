@@ -21,6 +21,17 @@ registry:
   password:
     - KAMAL_REGISTRY_PASSWORD
 
+proxy:
+  # false
+  ssl: true
+  host: mdksoftware.io
+  # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
+  app_port: 8080
+  healthcheck:
+    path: /kamal/up/
+    interval: 2
+    timeout: 2
+
 # Inject ENV variables into containers (secrets come from .env).
 # Remember to run `kamal env push` after making changes!
 # env:
