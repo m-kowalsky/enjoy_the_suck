@@ -1,0 +1,20 @@
+package main
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
+func main() {
+
+	router := gin.Default()
+
+	router.LoadHTMLGlob("views/*")
+
+	router.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.html", gin.H{
+			"title": "Enjoy Sucking"})
+	})
+	router.Run(":8080")
+}
