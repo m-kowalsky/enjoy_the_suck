@@ -17,7 +17,7 @@ func main() {
 	})
 	router.Run(":8080")
 
-	router.GET("/kamal/up", func(c *gin.Context) {
+	router.GET("/kamal/up/", func(c *gin.Context) {
 		c.Status(200)
 	})
 }
