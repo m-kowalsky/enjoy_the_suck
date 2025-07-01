@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: enjoyt_the_suck
+service: enjoy_the_suck
 
 # Name of the container image.
 image: karlhavoc/enjoy_the_suck
