@@ -9,7 +9,8 @@ servers:
   web:
     hosts:
       - 5.78.130.116
-
+ssh:
+  user: root
 # Credentials for your image host.
 registry:
   # Specify the registry server, if you're not using Docker Hub
@@ -33,6 +34,8 @@ registry:
 #   user: app
 
 # Configure builder setup.
+builder:
+  arch: amd64
 # builder:
 #   args:
 #     RUBY_VERSION: 3.2.0
