@@ -26,7 +26,7 @@ proxy:
   ssl: true
   host: mdksoftware.io
   # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
-  app_port: 8080
+  app_port: 80
   healthcheck:
     path: /kamal/up/
     interval: 2
