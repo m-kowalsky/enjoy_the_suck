@@ -7,8 +7,8 @@ image: karlhavoc/enjoy_the_suck
 # Deploy to these servers.
 servers:
   web:
-    hosts:
-      - 5.78.130.116
+    - 5.78.130.116
+
 ssh:
   user: root
 # Credentials for your image host.
@@ -26,11 +26,11 @@ proxy:
   ssl: true
   host: mdksoftware.io
   # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
-  app_port: 80
-  healthcheck:
-    path: /kamal/up/
-    interval: 2
-    timeout: 2
+  # app_port: 80
+  # healthcheck:
+  #   path: /kamal/up/
+  #   interval: 2
+  #   timeout: 2
 
 # Inject ENV variables into containers (secrets come from .env).
 # Remember to run `kamal env push` after making changes!
