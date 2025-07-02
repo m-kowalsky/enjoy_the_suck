@@ -2,7 +2,7 @@
 service: enjoy_the_suck
 
 # Name of the container image.
-image: karlhavoc/enjoy_the_suck
+image: enjoy_the_suck
 
 # Deploy to these servers.
 servers:
@@ -11,7 +11,8 @@ servers:
 
 ssh:
   user: root
-  keys: [ "~/.ssh/id_ed25519" ]
+  keys: 
+    - ~/.ssh/id_ed25519
 
 # Credentials for your image host.
 registry:

@@ -16,8 +16,5 @@ func main() {
 			"title": "Enjoy Sucking"})
 	})
 
-	router.GET("/kamal/up/", func(c *gin.Context) {
-		c.Status(200)
-	})
 	router.Run(":80")
 }
