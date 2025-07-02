@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: enjoy_the_suck
+service: web
 
 # Name of the container image.
 image: karlhavoc/enjoy_the_suck
@@ -27,7 +27,6 @@ proxy:
   host: mdksoftware.io
   # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
   app_port: 8080
-  service: enjoy_the_suck
   healthcheck:
     path: /kamal/up/
     interval: 2
