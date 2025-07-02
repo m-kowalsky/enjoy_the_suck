@@ -11,7 +11,7 @@ func main() {
 
 	router.LoadHTMLGlob("templates/*")
 
-	router.GET("/", func(c *gin.Context) {
+	router.GET("/index", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"title": "Enjoy Sucking"})
 	})
