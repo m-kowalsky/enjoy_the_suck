@@ -9,7 +9,6 @@ COPY --from=builder /app/enjoy_the_suck .
 COPY templates ./templates
 RUN chmod +x /app/enjoy_the_suck
 EXPOSE 80
-HEALTHCHECK --interval=10s --timeout=3s --start-period=30s --retries=3 \
-  CMD wget --spider -q http://localhost:8080/ || exit 1
+HEALTHCHECK CMD wget --spider -q http://localhost:80/kamal/up/ || exit 1
 ENTRYPOINT ["/app/enjoy_the_suck"]
 
