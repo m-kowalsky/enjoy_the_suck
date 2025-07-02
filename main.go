@@ -15,6 +15,9 @@ func main() {
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"title": "Enjoy Sucking"})
 	})
+	router.GET("/up/", func(c *gin.Context) {
+		c.Status(http.StatusOK)
+	})
 
 	router.Run(":80")
 }
