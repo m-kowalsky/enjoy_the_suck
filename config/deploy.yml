@@ -26,8 +26,10 @@ registry:
 
 proxy:
   # false
-  ssl: false
-  host: mdksoftware.io
+  ssl: true
+  hosts:
+    - mdksoftware.io
+    - www.mdksoftware.io
   # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
   app_port: 80
   healthcheck:
